@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About | Purnendu Thokdar</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="about-page">
+
+    <!-- // For NAVBAR -->
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Navbar load error:', error));
+    </script>
+
+    <!-- // For FOOTER -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+
+            try {
+                const footerResponse = await fetch("./footer.html");
+                const footerData = await footerResponse.text();
+
+                document.getElementById("footer-container").innerHTML = footerData;
+            } catch (error) {
+                console.error("Footer Error:", error);
+            }
+
+        });
+    </script>
+
+    <header id="header" class="header d-flex align-items-center light-background sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+
+
+            <!-- Navbar -->
+            <div id="navbar-container"></div>
+
+            <!--End Navbar -->
+
+
+
+            <div class="header-social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>About</h2>
+                <p>
+                    MCA student, WordPress Developer, and PHP Developer passionate about building
+                    responsive websites, web applications, and innovative digital solutions.
+                </p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <!-- Intro + Photo -->
+                <div class="row align-items-center justify-content-between gy-4 mb-3">
+                    <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
+                        <div class="intro-content">
+                            <span class="eyebrow">Welcome to My Portfolio</span>
+                            <h2 class="headline"> Hi, I'm Purnendu Thokdar – MCA Student & Aspiring Full Stack Developer
+                            </h2>
+                            <p class="lead">
+                                I am currently pursuing my MCA and have a strong interest in Web Development, Artificial
+                                Intelligence, and Software Engineering.
+
+                            </p>
+                            <p>
+                                I enjoy building responsive websites, developing AI-based projects, and continuously
+                                learning modern technologies to enhance my development skills.
+
+                            </p>
+
+                            <div class="cta-group">
+                                <a href="#portfolio" class="btn-ghost">
+                                    View My Work <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                                <a href="assets/resume/Purnendu-Thokdar-Resume.pdf" class="link-underline"
+                                    target="_blank"> Download Resume <i class="bi bi-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
+                        <figure class="profile-figure text-center text-lg-end">
+                            <img src="assets/img/person/myimg.jpg" alt="Purnendu Thokdar"
+                                class="img-fluid profile-photo">
+                        </figure>
+                    </div>
+                </div>
+                <!-- End Intro + Photo -->
+
+                <!-- Skills Grid -->
+                <div class="mb-5">
+                    <div class="row g-4">
+
+                        <!-- HTML & CSS -->
+                        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-item">
+                                <i class="bi bi-filetype-html"></i>
+                                <h3>HTML & CSS</h3>
+                                <p>Creating responsive and visually appealing website layouts.</p>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                            <div class="skill-item">
+                                <i class="bi bi-filetype-js"></i>
+                                <h3>JavaScript</h3>
+                                <p>Building interactive and dynamic user experiences.</p>
+                            </div>
+                        </div>
+
+                        <!-- PHP -->
+                        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-item">
+                                <i class="bi bi-code-slash"></i>
+                                <h3>PHP Development</h3>
+                                <p>Developing secure and scalable web applications.</p>
+                            </div>
+                        </div>
+
+                        <!-- MySQL -->
+                        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+                            <div class="skill-item">
+                                <i class="bi bi-database"></i>
+                                <h3>MySQL</h3>
+                                <p>Managing databases and optimizing data operations.</p>
+                            </div>
+                        </div>
+
+                        <!-- WordPress -->
+                        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-item">
+                                <i class="bi bi-wordpress"></i>
+                                <h3>WordPress</h3>
+                                <p>Customizing themes, plugins, and managing business websites.</p>
+                            </div>
+                        </div>
+
+                        <!-- Laravel -->
+                        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+                            <div class="skill-item">
+                                <i class="bi bi-box"></i>
+                                <h3>Laravel</h3>
+                                <p>Building modern PHP applications using the Laravel framework.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cloud Computing -->
+                        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-item">
+                                <i class="bi bi-cloud"></i>
+                                <h3>Cloud Computing</h3>
+                                <p>Knowledge of AWS cloud services and deployment concepts.</p>
+                            </div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="450">
+                            <div class="skill-item">
+                                <i class="bi bi-git"></i>
+                                <h3>Git & GitHub</h3>
+                                <p>Version control and collaborative software development.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- End Skills Grid -->
+
+                <!-- Journey Timeline -->
+                <div class="mb-5">
+                    <div class="row g-4">
+
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+                            <article class="timeline-item">
+                                <span class="dot"></span>
+                                <time>2019</time>
+                                <h4>Madhyamik</h4>
+                                <p>Haripur High School</p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+                            <article class="timeline-item">
+                                <span class="dot"></span>
+                                <time>2021</time>
+                                <h4>Higher Secondary</h4>
+                                <p>Sovanagar High School (Science)</p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                            <article class="timeline-item">
+                                <span class="dot"></span>
+                                <time>2024</time>
+                                <h4>BCA Graduate</h4>
+                                <p>NSHM College of Management & Technology</p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                            <article class="timeline-item">
+                                <span class="dot"></span>
+                                <time>2025</time>
+                                <h4>MCA Pursuing</h4>
+                                <p>Swami Vivekananda University</p>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Journey Timeline -->
+
+                <!-- Quote -->
+                <blockquote class="personal-quote text-center mb-3" data-aos="fade-down" data-aos-delay="200">
+                    <p>
+                        "Turning ideas into functional web applications through continuous learning, innovation, and
+                        problem-solving."
+                    </p>
+                </blockquote>
+                <!-- End Quote -->
+            </div>
+
+        </section><!-- /About Section -->
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Skills</h2>
+                <p>
+                    Proficient in PHP, WordPress, JavaScript, MySQL, Laravel, GitHub, and Cloud Computing, with hands-on
+                    experience in developing modern web applications.
+                </p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row g-4 skills-animation">
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-box">
+                            <h3>HTML & CSS</h3>
+                            <p>Building responsive and modern user interfaces.</p>
+                            <span class="text-end d-block">90%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-box">
+                            <h3>JavaScript</h3>
+                            <p>Creating interactive and dynamic web experiences.</p>
+                            <span class="text-end d-block">80%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-box">
+                            <h3>PHP Development</h3>
+                            <p>Developing scalable and secure web applications.</p>
+                            <span class="text-end d-block">85%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-box">
+                            <h3>WordPress</h3>
+                            <p>Custom theme development and website management.</p>
+                            <span class="text-end d-block">90%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- /Skills Section -->
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <!--Footer -->>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
