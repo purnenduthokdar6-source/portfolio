@@ -39,12 +39,28 @@
 
   <!-- // For NAVBAR -->
   <script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-      })
-      .catch(error => console.error('Navbar load error:', error));
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const response = await fetch("navbar.html");
+        const data = await response.text();
+
+        document.getElementById("navbar-container").innerHTML = data;
+
+        // Mobile menu fix
+        const btn = document.querySelector(".mobile-nav-toggle");
+
+        if (btn) {
+          btn.addEventListener("click", function () {
+            document.body.classList.toggle("mobile-nav-active");
+            this.classList.toggle("bi-list");
+            this.classList.toggle("bi-x");
+          });
+        }
+
+      } catch (error) {
+        console.error("Navbar Error:", error);
+      }
+    });
   </script>
 
   <!-- // For FOOTER -->
