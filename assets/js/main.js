@@ -25,15 +25,17 @@
   /**
    * Mobile nav toggle
    */
- document.addEventListener('click', function (e) {
-  const mobileNavToggleBtn = e.target.closest('.mobile-nav-toggle');
+const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
-  if (!mobileNavToggleBtn) return;
-
-  document.body.classList.toggle('mobile-nav-active');
+function mobileNavToogle() {
+  document.querySelector('body').classList.toggle('mobile-nav-active');
   mobileNavToggleBtn.classList.toggle('bi-list');
   mobileNavToggleBtn.classList.toggle('bi-x');
-});
+}
+
+if (mobileNavToggleBtn) {
+  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+}
 
   /**
    * Hide mobile nav on same-page/hash links
